@@ -24,6 +24,8 @@ function App() {
         .catch((err) => {
           console.log(err);
         })
+
+        setWord('');   // to cear search input and back it to default
   }
   //console.log(word);
 
