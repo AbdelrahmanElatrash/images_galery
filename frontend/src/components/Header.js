@@ -1,13 +1,19 @@
 
 import React from 'react';
-import {Navbar} from 'react-bootstrap' ;
-import { propTypes } from 'react-bootstrap/esm/Image';
+import {Navbar,Container} from 'react-bootstrap' ;
+
+
+const navbarStyle ={
+   backgroundColor : 'lightblue'
+}
 
 const Header = (prope)=> {
     const {title} = prope;
     return (
-        <Navbar bg="primary" variant="dark">
-          <Navbar.Brand href="/">{title}</Navbar.Brand>
+        <Navbar style={navbarStyle}  bg="primary" variant="dark">
+          <Container>
+            <Navbar.Brand href="/">{title}</Navbar.Brand>
+          </Container>
         </Navbar>
     )
 };
