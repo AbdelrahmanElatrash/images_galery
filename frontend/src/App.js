@@ -1,12 +1,12 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import { useState } from "react";
-import Header from "./components/Header";
-import Search from "./components/search";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from 'react';
+import Header from './components/Header';
+import Search from './components/search';
 
 const UNSPLASH_KEY = process.env.REACT_APP_UNSPLASH_KEY;
 
 function App() {
-  const [word, setWord] = useState("");
+  const [word, setWord] = useState('');
 
   const submithandler = function submithandler(e) {
     e.preventDefault();
@@ -24,7 +24,7 @@ function App() {
         console.log(err);
       });
 
-    setWord(""); // to clear search input and back it to default
+    setWord(''); // to clear search input and back it to default
   };
   //console.log(word);
 
